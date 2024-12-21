@@ -1,0 +1,396 @@
+/* sélecteurs globales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    max-width: 100%;
+    background-image: url(images/banniere1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+:root{
+    --black: #000;
+    --white: #fff;
+    --chocolat: #7b3f00;
+}
+
+h1{
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+strong{
+    font-size: 18px;
+}
+
+.flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#section-a-propos .flex-a-propos .ctn-content h1,
+#section-services .grid-services section h1{
+    font-size: 2.2em;
+    line-height: 1.2;
+}
+#section-presentation .ctn-btn,
+.flex-section-services .ctn-btn a{
+    margin: 20px 0;
+}
+
+/* Header du site */
+header{
+    width: 100%;
+    padding: 20px 40px;
+    background-color: var(--white);
+    background-position: top center;
+    background-size: cover;
+    box-shadow: 0 13px 39px -29px #7b4000a6;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header .flex-header{
+    justify-content: space-between;
+    align-items: center;
+}
+header .flex-header .flex-title{
+    gap: 8px;
+    align-items: center;
+}
+header .flex-header .flex-title img{
+    width: 40px;
+    height: auto;
+}
+header h1{
+    font-size: 2em;
+    color: var(--chocolat);
+}
+a.download{
+    border: 2px solid var(--chocolat);
+    padding: 14px 24px;
+    border-radius: 999px;
+    color: var(--chocolat);
+    box-shadow: 0 0 1px var(--black);
+    transition: all 400ms ease-in-out;
+}
+a.download:hover{
+    background-color: var(--chocolat);
+    color: var(--white);
+}
+
+/* Section présentation */
+#section-presentation{
+    padding: 60px 40px;
+    background-color: var(--white);
+}
+#section-presentation .flex-section-presentation{
+    justify-content: space-between;
+    gap: 30px;
+}
+#section-presentation .content-grid{
+    flex: 2;
+}
+#section-presentation h1{
+    font-size: 2.5em;
+    line-height: 1;
+    margin-bottom: 16px;
+    color: var(--chocolat);
+}
+#section-presentation h1::first-letter{
+    font-size: 2.10em;
+}
+#section-presentation p{
+    color: var(--chocolat);
+}
+#section-presentation .ctn-btn a{
+    border: 2px solid var(--chocolat);
+    padding: 16px 24px;
+    border-radius: 999px;
+    color: var(--chocolat);
+    box-shadow: 0 0 1px var(--black);
+    transition: all 400ms ease-in-out;
+}
+#section-presentation .ctn-btn a:hover{
+    background-color: var(--chocolat);
+    color: var(--white);
+}
+#section-presentation .content-image{
+    flex: 1;
+    justify-content: center;
+}
+#section-presentation img{
+    max-width: 60%;
+    width: 100%;
+    height: auto;
+}
+
+/* Section à propos */
+#section-a-propos{
+    padding: 80px;
+    background-color: var(--black);
+}
+
+#section-a-propos .flex-a-propos div:nth-child(1){
+    flex: 1;
+}
+#section-a-propos .flex-a-propos div:nth-child(1) img{
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+}
+#section-a-propos .flex-a-propos .ctn-content{
+    flex: 1;
+}
+#section-a-propos .flex-a-propos .ctn-content h1{
+    font-size: 2.2em;
+    line-height: 1.2;
+    color: var(--chocolat);
+    margin: 50px 0 20px 0;
+}
+#section-a-propos .flex-a-propos .ctn-content p{
+    color: var(--chocolat);
+}
+.flex-a-propos .ctn-content .flex-section-content{
+    margin-top: 20px;
+    display: inline-flex;
+    gap: 10px;
+}
+.flex-a-propos .ctn-content section .flex-section-content div{
+    background-color: var(--chocolat);
+    padding: 8px 26px;
+    border-radius: 4px;
+}
+.flex-section-content div p{
+    color: var(--white)!important;
+}
+#section-a-propos .ctn-btn{
+    margin: 50px 0;
+}
+#section-a-propos .ctn-btn a{
+    border: 2px solid var(--chocolat);
+    padding: 12px 42px;
+    border-radius: 999px;
+    color: var(--chocolat);
+    box-shadow: 0 0 1px var(--black);
+    transition: all 400ms ease-in-out;
+}
+#section-a-propos .ctn-btn a:hover{
+    background-color: var(--chocolat);
+    color: var(--white);
+}
+
+/* Section services */
+#section-services{
+    padding: 100px 40px;
+    /* background-color: var(--white); */
+}
+#section-services .grid-services{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+#section-services .grid-services .ctn-buttons .flex-services{
+    flex-direction: column; 
+    height: 100%;
+}
+.grid-services .ctn-buttons .flex-services button,
+.grid-services .ctn-buttons .flex-services a.no-border{
+    display: block;
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border: none;
+    padding: 12px;
+    border-bottom: 1px solid var(--white);
+    background-color: var(--black);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.grid-services .ctn-buttons .flex-services button:hover,
+.grid-services .ctn-buttons .flex-services a.no-border:hover{
+    background-color: var(--chocolat);
+}
+.grid-services .ctn-buttons .flex-services button.active{
+    background-color: var(--chocolat);
+}
+.grid-services .ctn-buttons .flex-services a.no-border{
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section-services .grid-services section{
+    background-color: var(--chocolat);
+    height: 100%;
+    padding: 100px 30px 0;
+    color: var(--white);
+}
+#section-services .grid-services section .flex-section-services{
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+.grid-services section .flex-section-services div:nth-child(1){
+    flex: 2;
+}
+.grid-services section .flex-section-services div:nth-child(2){
+    flex: 1;
+}
+.grid-services section .flex-section-services div:nth-child(2) img{
+    height: 350px;
+    object-fit: contain;
+}
+#section-services .grid-services section h1{
+    margin-bottom: 20px;
+}
+.flex-section-services .ctn-btn a{
+    display: inline-block;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 12px 32px;
+    border-radius: 999px;
+    transition: all 400ms ease-in-out;
+}
+.flex-section-services .ctn-btn a:hover{
+    background-color: var(--white);
+    color: var(--chocolat);
+}
+
+
+/* Lorsque la taille de l'écran de l'appareil sera 1024px ou moins, ces styles seront appliqués:*/
+@media (max-width: 1024px) {
+    /* Section présentation */
+    #section-presentation .flex-section-presentation{
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    #section-presentation .conten-center-small-screen{
+        text-align: center;
+    }
+
+    /* Section à propos */
+    #section-a-propos{
+        padding: 50px 24px;
+    }
+    #section-a-propos .flex-a-propos{
+        flex-direction: column;
+        gap: 30px;
+    }
+    #section-a-propos .flex-a-propos .ctn-content{
+        order: -1;
+    }
+    #section-a-propos .ctn-btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Section services */
+    #section-services .grid-services{
+        max-width: 1024px;
+        width: 100%;
+        grid-template-columns: 100%;
+        margin: 0 auto;
+    }
+    #section-services .grid-services section{
+        background-color: var(--chocolat);
+        height: 100%;
+        padding: 50px 30px;
+        color: var(--white);
+    }
+
+    /* Section services */
+    .grid-services .ctn-buttons .flex-services button,
+    .grid-services .ctn-buttons .flex-services a.no-border{
+        height: 50px;
+    }
+
+    }
+
+/* Lorsque la taille de l'écran de l'appareil sera 640px ou moins, ces styles seront appliqués.*/
+@media (max-width: 640px){
+    /* Header du site */
+    header{
+        padding: 20px 10px;
+    }
+        
+    /* Section présentation */
+    #section-presentation{
+        padding: 40px 24px;
+    }
+
+    /* Section à propos */
+    #section-a-propos{
+        padding: 40px 24px 60px;
+    }
+
+    /* Section services */
+    #section-services{
+        padding: 100px 24px;
+    }
+    #section-services .grid-services section {
+        padding: 50px 20px;
+    }
+    #section-services .grid-services section .flex-section-services{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .grid-services .ctn-buttons .flex-services button,
+    .grid-services .ctn-buttons .flex-services a.no-border{
+        height: auto;
+    }
+    .grid-services .ctn-buttons .flex-services a.no-border{
+        border-bottom: 1px solid var(--white);
+    }
+    .flex-section-services .ctn-btn{
+        text-align: center;
+    }
+
+}
+
+/* Lorsque la taille de l'écran de l'appareil sera 350px ou moins, ces styles seront appliqués.*/
+
+@media (max-width: 350px){
+     /* Header du site */
+    header .flex-header{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        gap: 10px;
+    }
+    header .flex-header div:nth-child(2){
+        align-self: flex-end;
+    }
+    /* Section présentation */
+    #section-presentation{
+        padding: 60px 15px;
+    }
+}
