@@ -19,6 +19,7 @@ body{
     --black: #000;
     --white: #fff;
     --chocolat: #7b3f00;
+    --chocolat-claire: #dca05f;
 }
 
 h1{
@@ -94,7 +95,7 @@ header h1{
 }
 a.download{
     border: 2px solid var(--chocolat);
-    padding: 14px 24px;
+    padding: 12px 24px;
     border-radius: 999px;
     color: var(--chocolat);
     box-shadow: 0 0 1px var(--black);
@@ -171,11 +172,11 @@ a.download:hover{
 #section-a-propos .flex-a-propos .ctn-content h1{
     font-size: 2.2em;
     line-height: 1.2;
-    color: var(--chocolat);
+    color: var(--chocolat-claire);
     margin: 50px 0 20px 0;
 }
 #section-a-propos .flex-a-propos .ctn-content p{
-    color: var(--chocolat);
+    color: var(--chocolat-claire);
 }
 .flex-a-propos .ctn-content .flex-section-content{
     margin-top: 20px;
@@ -184,7 +185,7 @@ a.download:hover{
 }
 .flex-a-propos .ctn-content section .flex-section-content div{
     background-color: var(--chocolat);
-    padding: 8px 26px;
+    padding: 8px 16px;
     border-radius: 4px;
 }
 .flex-section-content div p{
@@ -194,16 +195,16 @@ a.download:hover{
     margin: 50px 0;
 }
 #section-a-propos .ctn-btn a{
-    border: 2px solid var(--chocolat);
+    border: 2px solid var(--chocolat-claire);
     padding: 12px 42px;
     border-radius: 999px;
-    color: var(--chocolat);
+    color: var(--chocolat-claire);
     box-shadow: 0 0 1px var(--black);
     transition: all 400ms ease-in-out;
 }
 #section-a-propos .ctn-btn a:hover{
-    background-color: var(--chocolat);
-    color: var(--white);
+    background-color: var(--chocolat-claire);
+    color: var(--black);
 }
 
 /* Section services */
@@ -339,22 +340,31 @@ a.download:hover{
 @media (max-width: 640px){
     /* Header du site */
     header{
-        padding: 20px 10px;
+        padding: 20px;
+    }
+    header .flex-header{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        
+    }
+    header .flex-header div:nth-child(2){
+        align-self: flex-end;
     }
         
     /* Section présentation */
     #section-presentation{
-        padding: 40px 24px;
+        padding: 40px 20px;
     }
 
     /* Section à propos */
     #section-a-propos{
-        padding: 40px 24px 60px;
+        padding: 40px 20px 60px;
     }
 
     /* Section services */
     #section-services{
-        padding: 100px 24px;
+        padding: 100px 20px;
     }
     #section-services .grid-services section {
         padding: 50px 20px;
@@ -374,23 +384,4 @@ a.download:hover{
         text-align: center;
     }
 
-}
-
-/* Lorsque la taille de l'écran de l'appareil sera 350px ou moins, ces styles seront appliqués.*/
-
-@media (max-width: 350px){
-     /* Header du site */
-    header .flex-header{
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: start;
-        gap: 10px;
-    }
-    header .flex-header div:nth-child(2){
-        align-self: flex-end;
-    }
-    /* Section présentation */
-    #section-presentation{
-        padding: 60px 15px;
-    }
 }
