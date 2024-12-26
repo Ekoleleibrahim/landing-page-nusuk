@@ -55,9 +55,11 @@ strong{
 }
 
 #section-a-propos .flex-a-propos .ctn-content h1,
-#section-services .grid-services section h1{
+/* #section-services .grid-services section h1, */
+#section-feedbacks h1{
     font-size: 2.2em;
     line-height: 1.2;
+    text-transform: uppercase;
 }
 #section-presentation .ctn-btn,
 .flex-section-services .ctn-btn a{
@@ -216,6 +218,7 @@ a.download:hover{
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+    box-shadow: 0 0 3px var(--black);
 }
 #section-services .grid-services .ctn-buttons .flex-services{
     flex-direction: column; 
@@ -285,6 +288,44 @@ a.download:hover{
     color: var(--chocolat);
 }
 
+/* Section feedbacks */
+#section-feedbacks{
+    padding: 100px 40px;
+    background-color: var(--white);
+}
+#section-feedbacks h1{
+    text-align: center;
+    color: var(--chocolat);
+    margin-bottom: 50px;
+}
+#section-feedbacks .grid{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    gap: 30px 20px;
+    overflow-x: auto;
+}
+#section-feedbacks .grid div.flex-grow{
+    flex-shrink: 0;
+    max-width: 100%;
+    width: 400px;
+}
+#section-feedbacks .grid section{
+    box-shadow: 0 0 2px var(--chocolat);
+    padding: 20px;
+    border-radius: 8px;
+}
+#section-feedbacks .grid section .flex-profil{
+    margin-top: 10px;
+    align-items: center;
+    gap: 8px;
+}
+#section-feedbacks .grid section .flex-profil img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
 
 /* Lorsque la taille de l'écran de l'appareil sera 1024px ou moins, ces styles seront appliqués:*/
 @media (max-width: 1024px) {
@@ -300,7 +341,7 @@ a.download:hover{
 
     /* Section à propos */
     #section-a-propos{
-        padding: 50px 24px;
+        padding: 50px 30px;
     }
     #section-a-propos .flex-a-propos{
         flex-direction: column;
@@ -382,6 +423,11 @@ a.download:hover{
     }
     .flex-section-services .ctn-btn{
         text-align: center;
+    }
+
+    /* Section feedbacks */
+    #section-feedbacks{
+        padding: 100px 20px;
     }
 
 }
