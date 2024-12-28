@@ -184,7 +184,7 @@ a.download:hover{
     gap: 10px;
 }
 .flex-a-propos .ctn-content section .flex-section-content div{
-    background-color: var(--white);
+    background-color: #fff;
     padding: 8px 16px;
     border-radius: 4px;
 }
@@ -331,7 +331,42 @@ a.download:hover{
     border-radius: 50%;
 }
 
-
+/* Partie footer */
+footer{
+    padding: 40px;
+    background-color: var(--chocolat);
+}
+footer h1{
+    font-size: 2.5em;
+    margin-bottom: 16px;
+}
+footer .flex-footer{
+    gap: 100px;
+    margin-bottom: 30px;
+}
+footer .flex-footer div.flex2{
+    flex: 2;
+}
+footer .flex-footer div.flex1{
+    flex: 2;
+}
+footer .flex-footer div.flex1 .flex-download-app{
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+    height: 100%;
+}
+footer img{
+    height: 40px;
+}
+footer .text-center{
+    margin-top: 10px;
+    text-align: center;
+}
+footer .text-center a{
+    color: var(--black);
+    text-decoration: underline;
+}
 /* Lorsque la taille de l'écran de l'appareil sera 1024px ou moins, ces styles seront appliqués:*/
 @media (max-width: 1024px) {
     /* Section présentation */
@@ -434,4 +469,17 @@ a.download:hover{
         padding: 100px 20px;
     }
 
+    /* Partie footer */
+    footer{
+        padding: 20px 24px;
+    }
+    footer .flex-footer{
+        gap: 40px;
+        flex-direction: column;
+    }
+    footer .flex-footer div.flex1 .flex-download-app{
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
 }
