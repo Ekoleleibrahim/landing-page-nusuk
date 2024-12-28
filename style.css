@@ -8,18 +8,18 @@
 body{
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--white);
+    background-color: var(--black);
     max-width: 100%;
-    background-image: url(images/banniere1.jpg);
+    /* background-image: url(images/banniere1.jpg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
 }
 
 :root{
     --black: #000;
     --white: #fff;
-    --chocolat: #7b3f00;
-    --chocolat-claire: #dca05f;
+    /* --chocolat: #7b3f00; */
+    --chocolat: #dca05f;
 }
 
 h1{
@@ -70,10 +70,10 @@ strong{
 header{
     width: 100%;
     padding: 20px 40px;
-    background-color: var(--white);
+    background-color: var(--black);
     background-position: top center;
     background-size: cover;
-    box-shadow: 0 13px 39px -29px #7b4000a6;
+    box-shadow: 0 10px 35px -29px var(--chocolat);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -100,18 +100,17 @@ a.download{
     padding: 12px 24px;
     border-radius: 999px;
     color: var(--chocolat);
-    box-shadow: 0 0 1px var(--black);
+    box-shadow: 0 0 2px var(--chocolat);
     transition: all 400ms ease-in-out;
 }
 a.download:hover{
     background-color: var(--chocolat);
-    color: var(--white);
+    color: var(--black);
 }
 
 /* Section présentation */
 #section-presentation{
     padding: 60px 40px;
-    background-color: var(--white);
 }
 #section-presentation .flex-section-presentation{
     justify-content: space-between;
@@ -127,22 +126,22 @@ a.download:hover{
     color: var(--chocolat);
 }
 #section-presentation h1::first-letter{
-    font-size: 2.10em;
+    font-size: 55px;
 }
 #section-presentation p{
     color: var(--chocolat);
 }
 #section-presentation .ctn-btn a{
     border: 2px solid var(--chocolat);
-    padding: 16px 24px;
+    padding: 12px 24px;
     border-radius: 999px;
     color: var(--chocolat);
-    box-shadow: 0 0 1px var(--black);
+    box-shadow: 0 0 2px var(--chocolat);
     transition: all 400ms ease-in-out;
 }
 #section-presentation .ctn-btn a:hover{
     background-color: var(--chocolat);
-    color: var(--white);
+    color: var(--black);
 }
 #section-presentation .content-image{
     flex: 1;
@@ -157,7 +156,6 @@ a.download:hover{
 /* Section à propos */
 #section-a-propos{
     padding: 80px;
-    background-color: var(--black);
 }
 
 #section-a-propos .flex-a-propos div:nth-child(1){
@@ -174,11 +172,11 @@ a.download:hover{
 #section-a-propos .flex-a-propos .ctn-content h1{
     font-size: 2.2em;
     line-height: 1.2;
-    color: var(--chocolat-claire);
+    color: var(--chocolat);
     margin: 50px 0 20px 0;
 }
 #section-a-propos .flex-a-propos .ctn-content p{
-    color: var(--chocolat-claire);
+    color: var(--chocolat);
 }
 .flex-a-propos .ctn-content .flex-section-content{
     margin-top: 20px;
@@ -186,33 +184,34 @@ a.download:hover{
     gap: 10px;
 }
 .flex-a-propos .ctn-content section .flex-section-content div{
-    background-color: var(--chocolat);
+    background-color: var(--white);
     padding: 8px 16px;
     border-radius: 4px;
 }
 .flex-section-content div p{
-    color: var(--white)!important;
+    color: var(--black)!important;
 }
 #section-a-propos .ctn-btn{
     margin: 50px 0;
 }
 #section-a-propos .ctn-btn a{
-    border: 2px solid var(--chocolat-claire);
+    border: 2px solid var(--chocolat);
     padding: 12px 42px;
     border-radius: 999px;
-    color: var(--chocolat-claire);
+    color: var(--chocolat);
     box-shadow: 0 0 1px var(--black);
     transition: all 400ms ease-in-out;
 }
 #section-a-propos .ctn-btn a:hover{
-    background-color: var(--chocolat-claire);
+    background-color: var(--chocolat);
     color: var(--black);
 }
 
 /* Section services */
 #section-services{
     padding: 100px 40px;
-    /* background-color: var(--white); */
+    background-color: url(images/banniere1.jpg);
+    background-size: cover;
 }
 #section-services .grid-services{
     max-width: 1024px;
@@ -221,8 +220,10 @@ a.download:hover{
     box-shadow: 0 0 3px var(--black);
 }
 #section-services .grid-services .ctn-buttons .flex-services{
+    border-left: 1px solid var(--chocolat);
     flex-direction: column; 
     height: 100%;
+    box-shadow: 0 0 2px var(--chocolat);
 }
 .grid-services .ctn-buttons .flex-services button,
 .grid-services .ctn-buttons .flex-services a.no-border{
@@ -232,21 +233,25 @@ a.download:hover{
     outline: none;
     border: none;
     padding: 12px;
-    border-bottom: 1px solid var(--white);
+    border-bottom: 1px solid var(--chocolat);
     background-color: var(--black);
-    color: white;
+    color: var(--chocolat);
     text-align: center;
     cursor: pointer;
 }
 .grid-services .ctn-buttons .flex-services button:hover,
 .grid-services .ctn-buttons .flex-services a.no-border:hover{
     background-color: var(--chocolat);
+    color: var(--black);
 }
 .grid-services .ctn-buttons .flex-services button.active{
     background-color: var(--chocolat);
+    color: var(--black);
+}
+.grid-services .ctn-buttons .flex-services .border-black:hover{
+    border-top: 1px solid var(--black);
 }
 .grid-services .ctn-buttons .flex-services a.no-border{
-    border-bottom: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,7 +260,8 @@ a.download:hover{
     background-color: var(--chocolat);
     height: 100%;
     padding: 100px 30px 0;
-    color: var(--white);
+    color: var(--black);
+    box-shadow: 0 0 2px var(--chocolat);
 }
 #section-services .grid-services section .flex-section-services{
     justify-content: space-between;
@@ -277,14 +283,14 @@ a.download:hover{
 }
 .flex-section-services .ctn-btn a{
     display: inline-block;
-    color: var(--white);
-    border: 1px solid var(--white);
+    color: var(--black);
+    border: 1px solid var(--black);
     padding: 12px 32px;
     border-radius: 999px;
     transition: all 400ms ease-in-out;
 }
 .flex-section-services .ctn-btn a:hover{
-    background-color: var(--white);
+    background-color: var(--black);
     color: var(--chocolat);
 }
 
@@ -295,7 +301,6 @@ a.download:hover{
 }
 #section-feedbacks h1{
     text-align: center;
-    color: var(--chocolat);
     margin-bottom: 50px;
 }
 #section-feedbacks .grid{
@@ -366,7 +371,6 @@ a.download:hover{
         background-color: var(--chocolat);
         height: 100%;
         padding: 50px 30px;
-        color: var(--white);
     }
 
     /* Section services */
