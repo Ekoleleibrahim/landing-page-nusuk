@@ -342,7 +342,7 @@ footer h1{
 }
 footer .flex-footer{
     gap: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 footer .flex-footer div.flex2{
     flex: 2;
@@ -357,11 +357,10 @@ footer .flex-footer div.flex1 .flex-download-app{
     height: 100%;
 }
 footer img{
-    height: 40px;
+    object-fit: contain;
 }
 footer .text-center{
     margin-top: 10px;
-    text-align: center;
 }
 footer .text-center a{
     color: var(--black);
@@ -412,6 +411,12 @@ footer .text-center a{
     .grid-services .ctn-buttons .flex-services button,
     .grid-services .ctn-buttons .flex-services a.no-border{
         height: 50px;
+    }
+
+    /* Partie footer */
+    footer .flex-footer{
+        gap: 20px;
+        flex-direction: column;
     }
 
     }
@@ -472,10 +477,6 @@ footer .text-center a{
     /* Partie footer */
     footer{
         padding: 20px 24px;
-    }
-    footer .flex-footer{
-        gap: 40px;
-        flex-direction: column;
     }
     footer .flex-footer div.flex1 .flex-download-app{
         justify-content: center;
