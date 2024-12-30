@@ -10,9 +10,6 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--black);
     max-width: 100%;
-    /* background-image: url(images/banniere1.jpg);
-    background-attachment: fixed;
-    background-size: cover; */
 }
 
 :root{
@@ -303,17 +300,21 @@ a.download:hover{
     text-align: center;
     margin-bottom: 50px;
 }
-#section-feedbacks .grid{
-    width: 100%;
-    display: flex;
+#section-feedbacks .container-slider{
+    max-width: 100%;
+    width: 800px;
+    margin: auto;
     padding: 10px;
-    gap: 30px 20px;
-    overflow-x: auto;
+    overflow-x: hidden;    
+}
+#section-feedbacks .grid{
+    display: flex;
+    gap: 20px;
 }
 #section-feedbacks .grid div.flex-grow{
     flex-shrink: 0;
     max-width: 100%;
-    width: 400px;
+    width: 520px;
 }
 #section-feedbacks .grid section{
     box-shadow: 0 0 2px var(--chocolat);
@@ -351,10 +352,10 @@ footer .flex-footer div.flex1{
     flex: 2;
 }
 footer .flex-footer div.flex1 .flex-download-app{
-    justify-content: end;
+    justify-content: center;
     align-items: end;
     gap: 10px;
-    height: 100%;
+    
 }
 footer img{
     object-fit: contain;
